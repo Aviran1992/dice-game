@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(170, 197, 221);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  width: 40rem;
+  background-color: rgb(14, 56, 94);
+}
+
+.scoreboard {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scoreboard h2,
+h3 {
+  padding: 1.5rem;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+}
+
+.dice img {
+  width: 8rem;
+  height: 8rem;
+  border: 1px black solid;
+  margin: 0 0.5rem;
+}
+
+.actions {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(170, 197, 221);
+}
+
+.actions input {
+  text-align: center;
+}
+
+.playerTurn {
+  background-color: rgb(155, 72, 72);
+}
+
+.winner {
+  visibility: hidden;
+}
+
+.winner::before {
+  content: 'winner';
+  color: gold;
+  position: absolute;
+  visibility: visible;
+  border: 2px dotted gold;
+  padding: 0.5rem;
+}
